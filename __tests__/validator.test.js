@@ -84,5 +84,12 @@ describe('validator module performs complex validations', () => {
     children:[],};
     expect(validator.isTheTypeOfValuesMatches(susan)).toBeTruthy();
   })
+  it('validates is there an array',()=>{
+    const susan = {  id:'123-45-6789',
+    name:'Susan McDeveloperson',
+    age: 37,
+    children:[],};
+    expect(validator.isThereArray(susan)).toBeFalsy(); 
+  })
 });
 
