@@ -11,8 +11,8 @@
 
 
 ### Setup
-npm init -y
-install all dependencies npm i jest eslint 
+*npm init -y*
+install all dependencies *npm i jest eslint*
 #### How to initialize/run your application (where applicable)
 
 - `npm start`
@@ -24,7 +24,7 @@ npm run test
 - Any tests of note?
 non
 - Describe any tests that you did not complete, skipped, etc
-non
+     *'validates a value array against an approved list'*
 
 #### UML
 
