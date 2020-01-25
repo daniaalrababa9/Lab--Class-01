@@ -82,10 +82,14 @@ describe('validator module performs complex validations', () => {
   expect(validator.isThereArray(susan)).toBeFalsy(); 
   });
 
-  // it('validates a value array against an approved list', () => {
-  //   // i.e. a string might only be allowed to be "yes" or "no"
-  //   expect(true).toBeFalsy();
-  // });
+  it('validates a value array against an approved list', () => {
+    // i.e. a string might only be allowed to be "yes" or "no"
+    const susan = {  id:'123-45-6789',
+    name:'Susan McDeveloperson',
+    age: 37,
+    children:['yes'],};
+    expect(validator.isTheValueOfTheArrrayIsYesOrNo(susan.children)).toBeTruthy() ;
+  });
 
   // TODO: Cover so, so many more cases
 })
